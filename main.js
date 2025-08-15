@@ -140,7 +140,7 @@ if (listEl) {
 // Contact: mailto helper
 const mailBtn = document.getElementById('mailto');
 if (mailBtn) {
-  const email = 'youremail@example.com'; // TODO: replace with your real email
+  const email = 'pradipgavakar8041@gmail.com'; // TODO: replace with your real email
   mailBtn.href = `mailto:${email}?subject=Solution%20Request&body=Hi%20Solution%20Hub%20Team%2C%0D%0A%0D%0ATopic%3A%20%0D%0AWhat%20have%20you%20already%20tried%3F%3A%20%0D%0ADeadline%20(if%20any)%3A%20%0D%0A%0D%0AThanks!`;
 }
 
