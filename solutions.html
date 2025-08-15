@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="Solution Hub — a modern, colorful website to help people with practical solutions." />
+<link rel="icon" href="assets/img/favicon.png" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="assets/css/style.css" />
+<script defer src="assets/js/main.js"></script>
+<title>Solution Hub</title>
+
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="index.html" aria-label="Solution Hub Home">
+      <span class="brand-logo" aria-hidden="true">🔆</span>
+      <span class="brand-text">Solution Hub</span>
+    </a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="site-menu" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="site-menu" class="site-menu" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="solutions.html">Solutions</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container section">
+  <header class="section-head">
+    <h1 class="section-title">All Solutions</h1>
+    <p>Use search and filters to quickly find the guide you need.</p>
+  </header>
+
+  <div class="toolbar">
+    <input id="search" type="search" placeholder="Search topics, steps, keywords…" aria-label="Search solutions" />
+    <select id="category" aria-label="Filter by category">
+      <option value="">All categories</option>
+      <option value="Tech">Tech</option>
+      <option value="Productivity">Productivity</option>
+      <option value="Health">Health</option>
+      <option value="Finance">Finance</option>
+      <option value="Life">Life</option>
+    </select>
+    <select id="sort" aria-label="Sort">
+      <option value="latest">Latest</option>
+      <option value="popular">Most Popular</option>
+      <option value="az">A → Z</option>
+    </select>
+  </div>
+
+  <div id="solutions-list" class="card-grid"></div>
+</main>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <h4>About Solution Hub</h4>
+      <p>We share simple, step‑by‑step solutions for everyday problems. Clear. Actionable. Friendly.</p>
+    </div>
+    <div>
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="solutions.html">All Solutions</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Stay Updated</h4>
+      <p>Follow and bookmark this page. New solutions are added regularly.</p>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>© <span id="year"></span> Solution Hub</span>
+    <a href="https://github.com/" target="_blank" rel="noopener">Powered by GitHub Pages</a>
+  </div>
+</footer>
+
+</body>
+</html>

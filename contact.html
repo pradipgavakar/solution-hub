@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="Solution Hub — a modern, colorful website to help people with practical solutions." />
+<link rel="icon" href="assets/img/favicon.png" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="assets/css/style.css" />
+<script defer src="assets/js/main.js"></script>
+<title>Solution Hub</title>
+
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="index.html" aria-label="Solution Hub Home">
+      <span class="brand-logo" aria-hidden="true">🔆</span>
+      <span class="brand-text">Solution Hub</span>
+    </a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="site-menu" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="site-menu" class="site-menu" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="solutions.html">Solutions</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container section">
+  <header class="section-head">
+    <h1 class="section-title">Contact</h1>
+    <p>Want to request a new solution or report an issue? Send a message — we read every request.</p>
+  </header>
+
+  <div class="contact-grid">
+    <form class="card" id="contact-form">
+      <label>
+        <span>Name</span>
+        <input required type="text" name="name" placeholder="Your name" />
+      </label>
+      <label>
+        <span>Email</span>
+        <input required type="email" name="email" placeholder="you@example.com" />
+      </label>
+      <label>
+        <span>Topic</span>
+        <input required type="text" name="topic" placeholder="What do you need help with?" />
+      </label>
+      <label>
+        <span>Message</span>
+        <textarea required name="message" rows="5" placeholder="Describe your request"></textarea>
+      </label>
+      <button class="btn btn-primary" type="submit">Send</button>
+      <p class="small muted">Note: On GitHub Pages, forms need a third‑party service (e.g., Formspree) or use the email button.</p>
+    </form>
+
+    <div class="card contact-alt">
+      <h3>Prefer email?</h3>
+      <p>Click the button to open your mail app with a pre‑filled message.</p>
+      <a class="btn btn-ghost" id="mailto" href="#">Email Us</a>
+      <div class="hint">
+        <p><strong>Tip:</strong> Replace <code>youremail@example.com</code> in <code>assets/js/main.js</code> with your real address.</p>
+      </div>
+    </div>
+  </div>
+</main>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <h4>About Solution Hub</h4>
+      <p>We share simple, step‑by‑step solutions for everyday problems. Clear. Actionable. Friendly.</p>
+    </div>
+    <div>
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="solutions.html">All Solutions</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Stay Updated</h4>
+      <p>Follow and bookmark this page. New solutions are added regularly.</p>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>© <span id="year"></span> Solution Hub</span>
+    <a href="https://github.com/" target="_blank" rel="noopener">Powered by GitHub Pages</a>
+  </div>
+</footer>
+
+</body>
+</html>
